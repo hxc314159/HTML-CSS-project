@@ -1,0 +1,345 @@
+.container {
+    /* background-color: rgba(165, 42, 42, 0.47); */
+}
+
+.header-part {
+    /* box-sizing: border-box;  */
+    background-color: rgb(137, 5, 5);
+    display: flex;
+    /* gap: 200px; */
+    grid-template-columns: 1fr 1fr;
+    height: 136px;
+    width: 3010px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.header-h1 {
+    /* background-color: rgb(137, 5, 5); */
+    display: flex;              
+    align-items: center;         /* 垂直居中 */
+    justify-content: center;     /* 水平居中 */
+    text-align: center;
+    margin: 0px;
+    font-size: 60px;
+    position: relative;
+    left: 100px;
+    color: white;
+    margin-right: 100px;
+}
+
+.header-h2 {
+    /* background-color: rgb(137, 5, 5); */
+    display: flex;              
+    align-items: center;         /* 垂直居中 */
+    justify-content: center;     /* 水平居中 */
+    text-align: center;
+    margin-right: 100px;
+    font-size: 25px;
+    color: white;
+}
+
+.href {
+    display: flex;  
+    /* gap: 200px;             */
+    align-items: center;     
+    /* justify-content: center;     */
+    /* margin-left: 200px; */
+}
+
+.header-href {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 28px;
+    font-weight: bold;
+    margin-left: 300px;
+}
+
+.header-href:hover {
+    border-bottom: 5px solid rgb(255, 13, 0); /* 添加自定义的下划线 */
+    padding-bottom: 4px; /* 设置下划线与文本的间距 */
+}
+
+.stack-li {
+    list-style: none;
+    padding-left: 0;
+}
+
+.stack-li {
+    position: relative;
+    padding-left: 30px;
+}
+
+.stack-li::before {
+    content: "_";
+    color: orangered;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.li_link {
+    text-decoration: none;
+    border-bottom: solid orangered;
+    color: black;
+}
+
+.li_link:hover {
+    color: orangered;
+}
+
+.main-article {
+    /* background-color: rgba(165, 42, 42, 0.47); */
+    /* width: 1900px; */
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.article {
+    position: relative;
+    left: 592px;
+    width: 2325px;
+    z-index: 1;
+}
+
+.personal-intro {
+    display: grid;
+    grid-template-columns: 300px 350px 300px;
+}
+
+.profile {
+    font-size: 30px;
+}
+
+.tech-stack {
+    font-size: 30px;
+}
+
+.three-major-part {
+    display: grid;
+    grid-template-rows: 1fr 1200px 1fr;
+    row-gap: 50px;
+}
+
+.inte-part1 {
+    display: grid;
+    grid-template-rows: 1104px 1404px 1604px;
+}
+
+.interest-h2 {
+    text-align: center;
+    font-size: 60px;
+    text-transform: uppercase;
+}
+
+.inte-part1-h3 {
+    color: white;
+    font-size: 30px;
+    border-bottom: solid orangered;
+    background-color: rgb(137, 5, 5);
+    /* padding-right:1000px; */
+    /* display: inline; */
+    padding-bottom: 10px;
+    position: relative;
+}
+
+.inte-part1-h3::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 1200px;
+    height: 50px;
+    background-color: white;
+}
+
+
+.physiCS {
+    display: grid;
+    grid-template-rows: 50px 1fr;
+    place-items: center;
+}
+
+.physiCS-title {
+   font-weight: bold;
+   border-bottom: solid orangered;
+}
+
+.physics-img-p {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.physics {
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    font-size: 25px;
+}
+
+.big-part {
+    display: grid;
+    grid-template-rows: 50px 1fr;
+    row-gap: 10px;
+    place-items: center;
+}
+
+.big-part-title {
+    font-weight: bold;
+    font-style: italic;
+    margin-top: 80px;
+    border-bottom: solid orangered;
+    /* width: 130px; */
+    justify-items: center;
+    align-items: center;
+    /* height: 50px; */
+}
+
+.big-part-article {
+    font-style: italic;
+    font-size: 40px;
+}
+
+.starship {
+    display: grid;
+    grid-template-rows: 70px 1fr;
+    row-gap: 10px;
+    place-items: center;
+}
+
+.starship-title {
+    font-style: italic;
+    font-size: 30px;
+    font-weight: bold;
+    border-bottom: solid orangered;
+    /* width: 100px; */
+    /* height: 50px; */
+    justify-items: center;
+    align-items: center;
+}
+
+.starship-part-article {
+    font-style: italic;
+    font-size: 40px;
+}
+
+.WHAT-h2 {
+    text-align: center;
+    font-size: 60px;
+    text-transform: uppercase;
+}
+
+
+.what-part1-h3 {
+    font-size: 30px;
+    border-bottom: solid orangered;   
+    padding-bottom: 10px;
+    position: relative;
+    background-color: rgb(137, 5, 5);
+    color: white;
+}
+
+.what-part1-h3::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 50px;
+    width: 1986px;
+    background-color: white;
+}
+.HOW-h2 {
+    text-align: center;
+    font-size: 60px;
+    text-transform: uppercase;
+}
+
+.HOW-part1-h3 {
+    font-size: 30px;
+    border-bottom: solid orangered;   
+    padding-bottom: 10px;
+    background-color: rgb(137, 5, 5);
+    color: white;
+    position: relative;
+}
+
+.HOW-part1-h3::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 50px;
+    width: 750px;
+    background-color: white;
+}
+
+
+
+.aside1 {
+    background-color:rgba(128, 128, 128, 0.155);
+    width: 600px;
+    height: 100%;
+    position: fixed;
+    top: 136px;
+    left: 0;
+    z-index: 10;
+    border-right: 10px;
+    border-right: 1px solid orangered;
+}
+
+.tech-set {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 100px;
+
+    justify-items: center;
+    align-items: center;
+}
+
+.project {
+    width:200px;
+    height: 100px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: orangered;
+    border-radius: 20%;
+    text-align: center;
+
+    transition: width 0.2s, background-color 0.2s ease-in-out;
+
+    background-color: rgba(255, 68, 0, 0.177);
+    display: grid; /* 启用 grid 布局 */
+    place-items: center; /* 水平和垂直居中 */
+    position: relative;
+}
+ 
+/* .project::after {
+    content: '❤️';
+    position: absolute;
+    top: -10px;
+    right: -10px;
+} */
+
+.project:hover {
+    background-color: rgba(255, 68, 0, 0.698);
+}
+
+.href {
+
+    font-size: 30px;
+    text-decoration: none;
+    color: black;
+}
+
+.href:hover {
+    color: white;
+}
+
+

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link href="style.css" rel="stylesheet" />
+
+  <title>The Basic Language of the Web: HTML</title>
+  <!-- Add tailwind play cdn -->
+  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+</head>
+
+<body>
+  <!--
+    <h1>The Basic Language of the Web: HTML</h1>
+    <h2>The Basic Language of the Web: HTML</h2>
+    <h3>The Basic Language of the Web: HTML</h3>
+    <h4>The Basic Language of the Web: HTML</h4>
+    <h5>The Basic Language of the Web: HTML</h5>
+    <h6>The Basic Language of the Web: HTML</h6>
+    -->
+<div class="container">
+
+    <header class="main-header">
+      <h1>📘👊😡✊ The Code Magazine</h1>
+      
+      <nav class="nav">
+        <!-- <strong>This is the navigation</strong> -->
+        <a href="blog.html">Blog</a>
+        <a href="#">Challenges</a>
+        <a href="flexbox.html">Flexbox</a>
+        <a href="css-grid.html">CSS Grid</a>
+      </nav>
+    </header>
+   <div class="flex-container grid-container">
+     <article>
+       <header class="post-header">
+         <h2>☝️🤓The Basic Language of the Web: HTML</h2>
+        
+        <div class="author-box">
+          <img src="img/laura-jones.jpg" alt="Headshot of Laura Jones" height="50" width="50"
+          class="author-img" />
+          
+          <p id="author" class="author">
+            Posted by <strong>He Xianchao</strong> on Monday, March 14st 2077
+          </p>
+        </div>
+          
+          <img src="starship.jpg" alt="HTML code on a screen"  class="post-img" />
+          <div class="buttom">
+            <button id="like">❤️ Like</button>
+            <button id="Dislike">👎 Dislike</button>
+            <button id="Star">⭐ Star</button>
+          </div>  
+        </header>
+
+      <p>
+        All modern websites and web applications are built using three
+        <em>fundamental</em>
+        technologies: HTML, CSS and JavaScript. These are the languages of the
+        web.
+      </p>
+
+      <p>
+        In this post, let's focus on HTML. We will learn what HTML is all
+        about, and why you too should learn it.
+      </p>
+
+      <h3>What is HTML?</h3>
+      <p>
+        HTML stands for <strong>H</strong>yper<strong>T</strong>ext
+        <strong>M</strong>arkup <strong>L</strong>anguage. It's a markup
+        language that web developers use to structure and describe the content
+        of a webpage (not a programming language).
+      </p>
+      <p>
+        HTML consists of elements that describe different types of content:
+        paragraphs, links, headings, images, video, etc. Web browsers
+        understand HTML and render HTML code as websites.
+      </p>
+      <p>In HTML, each element is made up of 3 parts:</p>
+
+      <ol>
+        <li class="first-li">The opening tag</li>
+        <li>The closing tag</li>
+        <li>The actual element</li>
+      </ol>
+
+      <p>
+        You can learn more at 
+        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">MDN Web Docs</a>.
+      </p>
+
+      <h3>Why should you learn HTML?</h3>
+
+      <p>
+        There are countless reasons for learning the fundamental language of
+        the web. Here are 5 of them:
+      </p>
+
+      <ul>
+        <li class="first-li">
+          To be able to use the fundamental web dev language
+        </li>
+        <li>
+          To hand-craft beautiful websites instead of relying on tools like
+          Worpress or Wix
+        </li>
+        <li>To build web applications</li>
+        <li>To impress friends</li>
+        <li>To have fun 😃</li>
+      </ul>
+
+      <p>Hopefully you learned something new here. See you next time!</p>
+    </article>
+
+    <aside>
+      <h4>Related posts</h4>
+
+      <ul class="related">
+        <li class="related-post">
+          <img src="https://tse4-mm.cn.bing.net/th/id/OIP-C.Liy2dQGEy-8JxIxESXF4UQHaEK?w=311&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="Person programming" width="75" height="75" />
+          <div class="related-info"> 
+            <a href="#" class="related-links">Ambassador to the United Nations </a>
+            <p class="related-author">By Justing Zheng</p>
+          </div>
+        </li>
+        <li class="related-post">
+          <img src="https://tse3-mm.cn.bing.net/th/id/OIP-C.NiENq3hZpJfSh_mNIBFB3gAAAA?w=121&h=140&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="Lightning" width="75" height="75" />
+          <div class="related-info">
+            <a href="#" class="related-links">Genius boy developed 5G</a>
+            <p class="related-author">By Jack Ma</p>
+          </div>
+        </li>
+        <li class="related-post">
+          <img src="data:image/jpeg;base64,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" alt="JavaScript code on a screen" width="75" height="75" />
+          <div class="related-info">
+            <a href="#" class="related-links">The greatest equation "主 = 6"</a>
+            <p class="related-author">By Jumping</p>
+          </div>
+        </li>
+      </ul>
+    </aside>
+  </div> 
+    <footer>
+      <p id="copyright" class="copyright text">
+        Copyright &copy; 2077 by He Xianchao.
+      </p>
+    </footer>
+  </div>
+</body>
+
+</html>
+
+
+<!-- 我以前总是感叹人的生命太短暂，没有办法见到未来的世界是什么样子的，但是我现在理解到，不用去想未来是什么样子的，未来是由人类创造出来的，牛顿，爱因斯坦这些伟大的物理学家死了这么久，但是现在的世界依然局限于他们所写下的一个个公式中，现在我作为一名工程师，我就是筑建这个世界的人，我可以创造未来 -->

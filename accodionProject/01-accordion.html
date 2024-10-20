@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accodion Component</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: sans-serif;
+            color: #343a40;
+
+            line-height: 1;
+        }
+
+        .accodion {
+            width: 700px;
+            margin: 100px auto;
+            /* background-color: #343a40; */
+
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        .item {
+            box-shadow: 0 0 32px rgba( 1, 1, 1, 0.2);
+            padding: 24px;
+
+            display: grid;
+            grid-template-columns: auto 1fr auto;
+            column-gap: 24px;
+            row-gap: 32px;
+            align-items: center;
+        }
+        .number {
+            font-size: 24px;
+            font-weight: 500;
+            color: #087f5b;
+        }
+        .text {
+            font-size: 24px;
+            font-weight: 500;
+            color: #087f5b;
+        }
+        .icon {
+            width: 24px;
+            height: 24px;
+            stroke: #087f5b;
+        }
+
+        .hidden-box {
+            grid-column: 2 / 3;
+            display: none;
+        }
+
+        .hidden-box p {
+            line-height: 1.6;
+            margin-bottom: 24px;
+
+            /* display: none; */
+        }
+
+        .hidden-box ul {
+            color: #868e96;
+            margin-left: 20px;
+
+            display: flex;
+            gap: 24px;
+            flex-direction: column;
+        }
+
+        /* .hidden-box li {
+            display: flex;
+            gap: 24px;
+            flex-direction: column;
+        } */
+
+        .open {
+            border-top: 4px solid #087f5b;
+        }
+
+        .open .hidden-box {
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="accodion">
+
+        <div class="item">
+            <p class="numbers">02</p>
+            <p class="text">HOw long do i have to return my chair</p>
+            <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            >
+            <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M19 9l-7 7-7-7"
+            />
+            </svg>
+            <div class="hidden-box">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla sequi fugiat beatae quidem explicabo ipsum blanditiis! Consequatur nisi ea ducimus quidem optio, veniam adipisci accusamus dolores inventore facilis ipsum hic?
+                </p>
+                <ul>
+                    <li>Lorem, ipsum dolor sit amet consectetur a</li>
+                    <li>dipisicing elit. Vitae quae illum a</Li>
+                    <li> minima vitae est maxime quidem consequuntur mo</li>
+                    <li>lestias provident possimus?</li>
+                    <li> repellendus, nihil</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="item open">
+            <p class="numbers">02</p>
+            <p class="text">HOw long do i have to return my chair</p>
+            <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            >
+            <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M19 9l-7 7-7-7"
+            />
+            </svg>
+            <div class="hidden-box">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla sequi fugiat beatae quidem explicabo ipsum blanditiis! Consequatur nisi ea ducimus quidem optio, veniam adipisci accusamus dolores inventore facilis ipsum hic?
+                </p>
+                <ul>
+                    <li>Lorem, ipsum dolor sit amet consectetur a</li>
+                    <li>dipisicing elit. Vitae quae illum a</Li>
+                    <li> minima vitae est maxime quidem consequuntur mo</li>
+                    <li>lestias provident possimus?</li>
+                    <li> repellendus, nihil</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="item">
+            <p class="numbers">02</p>
+            <p class="text">HOw long do i have to return my chair</p>
+            <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            >
+            <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M19 9l-7 7-7-7"
+            />
+            </svg>
+            <div class="hidden-box">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla sequi fugiat beatae quidem explicabo ipsum blanditiis! Consequatur nisi ea ducimus quidem optio, veniam adipisci accusamus dolores inventore facilis ipsum hic?
+                </p>
+                <ul>
+                    <li>Lorem, ipsum dolor sit amet consectetur a</li>
+                    <li>dipisicing elit. Vitae quae illum a</Li>
+                    <li> minima vitae est maxime quidem consequuntur mo</li>
+                    <li>lestias provident possimus?</li>
+                    <li> repellendus, nihil</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

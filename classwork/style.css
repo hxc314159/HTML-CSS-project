@@ -1,0 +1,401 @@
+* {
+    /* border-top: 10px solid #1098ad; */
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* PAGE SECTIONS */
+  body {
+    color: #444;
+    font-family: sans-serif;
+  
+    border-top: 10px solid #1098ad;
+    position: relative;
+  }
+  
+  .container {
+    width: 1300px;
+    /* margin-left: auto;
+    margin-right: auto; */
+    margin: 0 auto;
+    background-color: #1098ad20;
+  }
+  
+  .main-header {
+    background-color: #f7f7f7;
+    /* padding: 20px;
+    padding-left: 40px;
+    padding-right: 40px; */
+    padding: 20px 40px;
+    margin-bottom: 60px;
+    /* height: 80px; */
+  }
+  
+  nav {
+    font-size: 18px;
+    /* text-align: center; */
+  }
+  
+  article {
+    margin-bottom: 0px;
+    width: 900px;
+  }
+  
+  .post-header {
+    margin-bottom: 40px;
+    /* position: relative; */
+  }
+  
+  aside {
+    background-color: #1098ad1e;
+    border-top: 5px solid #1098ad3f;
+    /* border-bottom: 5px solid #1098ad; */
+
+    position: fixed;
+    top: 5px;
+    right: 100px;
+
+    padding: 50px 0;
+    width: 350px;
+    height: 880px;
+    display: grid;
+    grid-template-rows: 1fr 8fr;
+  }
+  
+  /* SMALLER ELEMENTS */
+  h1,
+  h2,
+  h3 {
+    color: #1098ad;
+  }
+  
+  h1 {
+    font-size: 26px;
+    text-transform: uppercase;
+    font-style: italic;
+  }
+  
+  h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
+    background-color: #4444441d;
+    height: 100px;
+    align-content: center;
+  }
+  
+  h3 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    margin-top: 40px;
+  }
+  
+  h4 {
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 0;
+  }
+  
+  p {
+    font-size: 22px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+  }
+  
+  ul,
+  ol {
+    margin-left: 50px;
+    margin-bottom: 20px;
+  }
+  
+  li {
+    font-size: 20px;
+    margin-bottom: 10px;
+    /* display: inline; */
+  }
+  
+  li:last-child {
+    margin-bottom: 0;
+  }
+  
+  /* footer p {
+    font-size: 16px;
+  } */
+  
+  /* article header p {
+    font-style: italic;
+  } */
+  
+  #author {
+    font-style: italic;
+    font-size: 18px;
+  }
+  
+  #copyright {
+    font-size: 16px;
+  }
+  
+  .related-author {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  /* ul {
+    list-style: none;
+  } */
+  
+  .related {
+    list-style: none;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+  
+  body {
+    /* background-color: orangered; */
+  }
+  
+  /* .first-li {
+    font-weight: bold;
+  } */
+  
+  li:first-child {
+    font-weight: bold;
+  }
+  
+  li:last-child {
+    font-style: italic;
+  }
+  
+  li:nth-child(even) {
+    /* color: red; */
+  }
+  
+  /* Misconception: this won't work! */
+  article p:first-child {
+    color: red;
+  }
+  
+  /* Styling links */
+  a:link {
+    color: #1098ad;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    /* color: #777; */
+    color: #1098ad;
+  }
+  
+  a:hover {
+    color: orangered;
+    font-weight: bold;
+    text-decoration: underline orangered;
+  }
+  
+  a:active {
+    background-color: black;
+    font-style: italic;
+  }
+  /* LVHA */
+  
+  .post-img {
+    width: 800px;
+    height: 400px;
+  }
+  
+  nav a:link {
+    /* background-color: orangered;
+    margin: 20px;
+    padding: 20px;
+  
+    display: block; */
+  
+    margin-right: 30px;
+    /* margin-top: 10px; */
+    display: inline-block;
+  }
+  
+  nav a:link:last-child {
+    margin-right: 0;
+  }
+
+  .buttom {
+    height: 70px;
+    width: 250px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    position: fixed;
+    right: 50px;
+    bottom: 150px;
+
+    font-size: 18px;
+    cursor: pointer;
+  }
+
+  #like:hover {
+    background-color: #1098ad1b;
+    color: #1098ad;
+    font-weight: bold;
+  }
+
+  #Dislike:hover {
+    background-color: #1098ad1b;
+    color: #1098ad;
+    font-weight: bold;
+  }
+
+  #Star:hover {
+    background-color: #1098ad1b;
+    color: #1098ad;
+    font-weight: bold;
+  }
+
+  
+  
+  h1::first-letter {
+    font-style: normal;
+    margin-right: 5px;
+  }
+  
+  h3 + p::first-line {
+    /* color: red; */
+  }
+  
+  h2 {
+    /* background-color: orange; */
+    position: relative;
+  }
+  
+  h2::before {
+    content: "TOP";
+    background-color: #ffe70e;
+    color: #444;
+    font-size: 16px;
+    font-weight: bold;
+    display: inline-block;
+    padding: 5px 10px;
+    position: absolute;
+    top: -10px;
+    right: -25px;
+  }
+  
+  footer {
+    width: 2199px;
+    height: 27px;
+    text-align: center;
+    background-color: aqua;
+    position: fixed;
+    bottom: 0px;
+    right: 5px;
+  }
+  /* Resolving conflicts */
+  /* #copyright {
+    color: red;
+  }
+  
+  .copyright {
+    color: blue;
+  }
+  
+  .text {
+    color: yellow;
+  }
+  
+  footer p {
+    color: green !important;
+  } */
+  
+  /* nav a:link,
+  nav p {
+    font-size: 18px;
+  } */
+
+
+  /* flexbox Part */
+
+  /* .flex-container {
+    display: flex;
+    gap: 35px;
+  } */
+
+ /* .main-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  } 
+
+  .author-box {
+    display: flex;
+    align-items: center;
+  }
+
+  .author {
+    margin-left: 15px;
+  }
+
+  .realted {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+
+  .related-post {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  .related-links {
+    font-size: 17px;
+    font-weight: bold;
+    font-style: normal;
+    margin-bottom: 5px;
+    display: block;
+  }
+
+  .related-author {
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: italic;
+  } */
+
+
+/* css-grid-part */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* grid-template-rows: 1fr 1fr; */
+}
+
+
+.main-header {
+  height: 70px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.nav {
+  background-color: #4444441b;
+  height: 70px;
+  text-align: center;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+}
+
+.related-post {
+  display: grid;
+  /* grid-column: 1fr 1fr 1fr; */
+  grid-template-columns: 1fr 2.5fr;
+
+  margin-bottom: 75px;
+  row-gap: 20px;
+}
+
+.related-info {
+  /* display: grid; */
+  /* grid-template-rows: 1fr 1fr; */
+  row-gap: 10px;
+}
